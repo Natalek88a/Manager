@@ -50,8 +50,12 @@ public class MovieManager {
     }
 
     public void findLast() {
-        if (countMovies > movies.length) {
-            countMovies = movies.length;
+        int resultLength = movies.length;
+
+        if (resultLength >= countMovies) {
+
+        } else {
+            resultLength = movies.length;
         }
         MovieData[] tmp = new MovieData[countMovies];
         for (int i = 0, j = movies.length - 1; i < countMovies; i++, j--) {
